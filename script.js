@@ -109,10 +109,20 @@ form.addEventListener('submit', (event) => {
     statusMessage.textContent = 'Please check the highlighted fields and try again.';
     return;
   }
+  const interest = document.querySelector('#interest').value;
+  const whatsappMessage = [
+    `Hi FitZone, I'm ${fields.name.input.value.trim()}.`,
+    `Email: ${fields.email.input.value.trim()}`,
+    `Phone: ${phoneValue}`,
+    `Interested in: ${interest}`,
+    '',
+    fields.message.input.value.trim(),
+  ].join('\n');
+  window.open(`https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener,noreferrer');
   form.reset();
   Object.values(fields).forEach((field) => setFieldError(field));
   statusMessage.className = 'form-status success';
-  statusMessage.textContent = 'Thanks! The demo form is valid. No message was sent.';
+  statusMessage.textContent = 'Your message is ready in WhatsApp. Review it and tap Send to contact us.';
 });
 
 document.querySelector('.back-to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
