@@ -1,113 +1,427 @@
-# FitZone Fitness Studio
+# 🏋️ FitZone Fitness Studio
 
-## Overview
+### Modern Responsive Fitness Studio Website
 
-FitZone is a polished static website concept for a fictional fitness studio in Bengaluru. It demonstrates how a small-business website can combine clear conversion paths, responsive layout, accessible interactions, and a distinctive visual identity without a framework or build step.
+FitZone Fitness Studio is a modern, responsive fitness studio website designed as a frontend portfolio project for a fictional fitness business in Bengaluru.
 
-## Live Demo
+The website focuses on **strong visual design, responsive layouts, accessibility, smooth interactions, conversion-focused sections, and a professional fitness brand experience** — built without React, Bootstrap, Tailwind CSS, or a backend.
 
-Local development URL: `http://localhost:5500`
+---
 
-Production URL: `[Add after deployment]`
+## 🌐 Live Demo
 
-## Screenshots
+**Website:**  
+https://raghu9741.github.io/FitZone-Fitness-Studio/
 
-No screenshots are included yet. Capture these after the final review:
+---
 
-- `assets/screenshots/desktop-home.png` at 1440 x 900
-- `assets/screenshots/desktop-programs.png` at 1440 x 1200
-- `assets/screenshots/desktop-pricing.png` at 1440 x 1200
-- `assets/screenshots/desktop-contact.png` at 1440 x 1200
-- `assets/screenshots/mobile-home.png` at 375 x 812
+## 📸 Project Preview
 
-Add the images to `assets/screenshots/` and link them here before publishing to GitHub.
+FitZone includes a complete fitness studio landing experience with:
 
-## Features
+- Hero section
+- About section
+- Fitness programs
+- Why FitZone section
+- Trainers
+- Membership pricing
+- Testimonials
+- Call-to-action sections
+- Contact form
+- Location information
+- Responsive navigation
+- Mobile-friendly layouts
 
-- Responsive mobile-first layout
-- Sticky navigation with active section state
-- Accessible mobile menu with Escape-key support
-- Hero, about, programs, benefits, trainers, pricing, testimonials, CTA and contact sections
-- Testimonial carousel with accessible slide state
-- Frontend-only contact form validation
-- Transparent demo-form status message
-- Scroll reveal animations with reduced-motion support
-- Phone, email, WhatsApp and Google Maps links
-- SEO metadata, Open Graph tags, canonical placeholder and JSON-LD
-- Back-to-top control and lazy-loaded below-the-fold images
+---
 
-## Technologies
+# ✨ Features
+
+## 🏠 Hero Section
+
+The homepage introduces the FitZone brand with:
+
+- Strong fitness-focused headline
+- Bengaluru location branding
+- Primary call-to-action
+- Program exploration link
+- Member statistics
+- Responsive hero imagery
+
+---
+
+## 💪 Fitness Programs
+
+The website presents multiple training programs:
+
+- Strength Training
+- Personal Training
+- Cardio Fitness
+- Functional Training
+- Weight Loss
+- Group Classes
+
+Each program includes a short description and a call-to-action.
+
+---
+
+## 👨‍🏫 Trainer Section
+
+The trainer section showcases fitness professionals with dedicated profile cards and photography.
+
+The project includes trainer assets for:
+
+- Arjun
+- Priya
+- Rahul
+
+---
+
+## 💳 Membership Pricing
+
+The pricing section presents different membership options with:
+
+- Plan names
+- Pricing
+- Plan descriptions
+- Feature lists
+- Popular-plan highlighting
+- Call-to-action buttons
+
+---
+
+## ⭐ Testimonials
+
+The website includes an interactive testimonial carousel.
+
+Users can:
+
+- Navigate between testimonials
+- View the active testimonial
+- Use previous/next controls
+- Navigate using keyboard-accessible controls
+
+---
+
+## 📱 Responsive Design
+
+The website is designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+Responsive layouts are implemented using CSS media queries, Grid, and Flexbox.
+
+---
+
+## 📞 Contact Section
+
+The contact area provides:
+
+- Phone contact
+- Email contact
+- WhatsApp action
+- Location information
+- Opening hours
+- Contact form
+- Google Maps link
+
+The contact form performs **frontend-side validation** and prepares the submitted information as a WhatsApp message.
+
+> This project does not use a backend form-processing service.
+
+---
+
+# ♿ Accessibility
+
+Accessibility considerations are included throughout the project.
+
+Features include:
+
+- Semantic HTML
+- Skip-to-content link
+- Descriptive image alt text
+- Form labels
+- Keyboard-friendly navigation
+- `:focus-visible` styles
+- Accessible mobile navigation
+- Escape-key support for the mobile menu
+- ARIA attributes
+- Reduced-motion support
+
+Users who enable reduced motion can avoid most animation effects.
+
+---
+
+# 🎨 Design
+
+FitZone uses a modern fitness-oriented visual identity featuring:
+
+- Dark sections
+- Bright lime-green primary accent
+- Coral secondary accent
+- Large typography
+- High-contrast layouts
+- Photography-driven sections
+- Card-based content
+- Responsive spacing
+- Smooth transitions
+
+The design uses:
+
+**DM Sans** and **Space Grotesk** through Google Fonts.
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
 
 - HTML5
-- CSS3 custom properties, Grid, Flexbox and media queries
+- CSS3
 - Vanilla JavaScript
-- Google Fonts: DM Sans and Space Grotesk
-- Font Awesome icons via CDN
-- Bundled JPG photography in `assets/images/`
 
-## Project Structure
+## CSS
+
+- CSS Custom Properties
+- CSS Grid
+- Flexbox
+- Media Queries
+- Responsive Design
+- CSS Transitions
+- CSS Animations
+
+## JavaScript
+
+- DOM Manipulation
+- Event Listeners
+- Intersection Observer API
+- Form Validation
+- Testimonial Carousel
+- Responsive Navigation
+- Smooth Scrolling
+- WhatsApp message generation
+
+## External Resources
+
+- Google Fonts
+- Font Awesome
+
+## Deployment
+
+- GitHub
+- GitHub Pages
+
+---
+
+# 📂 Project Structure
 
 ```text
-fitzone-website/
+FitZone-Fitness-Studio/
+│
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
 ├── .gitignore
-└── assets/
-    ├── images/       # Bundled photography; confirm usage rights before publishing
-    ├── icons/
-    ├── logo/
-    └── screenshots/  # Add real captured screenshots before publishing
+│
+├── assets/
+│   ├── icons/
+│   │   ├── bolt.svg
+│   │   ├── dumbbell.svg
+│   │   └── heart-pulse.svg
+│   │
+│   ├── images/
+│   │   ├── about.jpg
+│   │   ├── hero.jpg
+│   │   ├── map-texture.jpg
+│   │   ├── program-cardio.jpg
+│   │   ├── program-functional.jpg
+│   │   ├── program-strength.jpg
+│   │   ├── testimonial-1.jpg
+│   │   ├── testimonial-2.jpg
+│   │   ├── testimonial-3.jpg
+│   │   ├── trainer-arjun.jpg
+│   │   ├── trainer-priya.jpg
+│   │   └── trainer-rahul.jpg
+│   │
+│   └── logo/
+│       └── fitzone-mark.svg
+│
+└── .github/
+    └── workflows/
+        └── deploy.yml
 ```
 
-## Responsive Design
+---
 
-The layout was checked for horizontal overflow at 375px, 480px, 620px, 768px, 1024px and 1440px. The carousel is clipped on narrow screens so translated slides cannot create horizontal page overflow.
+# 🚀 Run Locally
 
-## Accessibility
+## 1. Clone the Repository
 
-The project includes semantic headings, descriptive image alt text, form labels, visible `:focus-visible` styles, a skip link, live form status, keyboard-friendly controls, mobile menu Escape support, and reduced-motion handling.
+```bash
+git clone https://github.com/raghu9741/FitZone-Fitness-Studio.git
+```
 
-## SEO
+Move into the project:
 
-The page includes a title, description, robots directive, canonical placeholder, Open Graph metadata, semantic headings and fictional `HealthClub` JSON-LD. Replace the `example.com` URLs with the real deployed URL before launch.
+```bash
+cd FitZone-Fitness-Studio
+```
 
-## Performance
+---
 
-The site has no build step or heavy JavaScript framework. The hero image remains eager for the first view; below-the-fold content images use lazy loading. Google Fonts and Font Awesome are external CDN dependencies and should be self-hosted for a production client if performance and privacy requirements demand it.
+## 2. Start a Local Server
 
-## How to Run Locally
+Because the project is a static website, no package installation or build process is required.
 
-Open the folder in VS Code and run:
+Using Python:
 
 ```bash
 python -m http.server 5500
 ```
 
-Then visit `http://localhost:5500`.
+Open:
 
-## Lighthouse Testing
+```text
+http://localhost:5500
+```
 
-Open the deployed or local URL in Chrome, open DevTools, select the **Lighthouse** tab, choose **Mobile** or **Desktop**, select Performance, Accessibility, Best Practices and SEO, then click **Analyze page load**. Record the actual scores; do not add claimed scores to this README until tested.
+---
 
-## Future Improvements
+# 🌐 Deployment
 
-- Confirm image usage rights and replace sample photography as needed
-- Connect the demo form to a service such as Formspree or Netlify Forms
-- Replace the Google Maps search link with a confirmed embed after the address is real
-- Self-host fonts and icons if the deployed client site needs tighter performance control
+The project can be deployed directly using **GitHub Pages**.
 
-## Disclaimer
+The repository also contains a GitHub Actions workflow:
 
-FitZone Fitness Studio is a fictional/demo business created for a portfolio project. The contact details, membership plans, testimonials, address and structured data are sample content and should be replaced or verified before use for a real business.
+```text
+.github/workflows/deploy.yml
+```
 
-## Author
+This allows the website to be deployed automatically through GitHub Actions.
 
-Portfolio project by [raghu9741](https://github.com/raghu9741).
+---
 
-## Suggested GitHub Repository
+# 🔄 How the Website Works
 
-- Name: `FitZone-Fitness-Studio`
-- Description: `Modern responsive fitness studio website built with HTML, CSS and vanilla JavaScript.`
-- Topics: `html`, `css`, `javascript`, `responsive-design`, `frontend`, `fitness`, `website`, `portfolio`
+```text
+User
+ │
+ ▼
+FitZone Homepage
+ │
+ ├── About
+ │
+ ├── Programs
+ │
+ ├── Trainers
+ │
+ ├── Pricing
+ │
+ ├── Testimonials
+ │
+ └── Contact
+        │
+        ▼
+   Form Validation
+        │
+        ▼
+   WhatsApp Message
+```
+
+---
+
+# 🧠 JavaScript Functionality
+
+The project uses Vanilla JavaScript for interactive behavior.
+
+### Navigation
+
+- Mobile menu toggle
+- Active navigation section
+- Sticky header behavior
+- Escape-key menu closing
+
+### Scrolling
+
+- Smooth anchor scrolling
+- Scroll-based navigation state
+- Back-to-top button
+
+### Animations
+
+The project uses the **Intersection Observer API** to reveal content as users scroll.
+
+### Testimonials
+
+The testimonial carousel supports:
+
+- Previous button
+- Next button
+- Active slide state
+- Accessible slide state
+
+### Contact Form
+
+The form validates:
+
+- Name
+- Email
+- Phone number
+- Message
+
+After successful validation, the form generates a WhatsApp message containing the submitted information.
+
+---
+
+# 🔍 SEO
+
+The website includes basic SEO implementation:
+
+- Page title
+- Meta description
+- Robots directive
+- Canonical URL
+- Open Graph metadata
+- Semantic HTML structure
+- Descriptive image alt text
+- JSON-LD structured data
+
+The structured data represents FitZone as a fictional `HealthClub` business.
+
+---
+
+# ⚡ Performance
+
+The project intentionally avoids a heavy frontend framework or build system.
+
+Performance-related implementation includes:
+
+- Lazy loading for below-the-fold images
+- Lightweight Vanilla JavaScript
+- CSS-based layouts
+- Responsive image usage
+- Minimal dependencies
+- No frontend framework bundle
+
+Google Fonts and Font Awesome are loaded through external CDNs.
+
+---
+
+# 📱 Responsive Breakpoints
+
+The layout adapts to different screen sizes including:
+
+```text
+Mobile
+   ↓
+Tablet
+   ↓
+Laptop
+   ↓
+Desktop
+```
+
+The CSS includes responsive handling for navigation, grids, cards, typography, forms,
